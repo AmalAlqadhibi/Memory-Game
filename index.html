@@ -23,7 +23,8 @@
         		<li><i class="fa fa-star"></i></li>
         	</ul>
 
-        	<span class="moves">0</span> Moves
+            <span class="moves">0</span> Moves  
+            <span id="timer">0m:0s</span>
 
             <div class="restart">
         		<i class="fa fa-repeat"></i>
@@ -84,8 +85,8 @@
     <dialog id="WinningDialog">
         <h1>Congratulations</h1>
         <p>You Won!</p>
-        <!-- This button was added to the dialog to allow user to close the dialog -->
-        <button onclick="closeDialog()">Play Again</button>
+        <p id= "score"></p>
+        <button onclick="playAgainButton()">Play Again</button>
     </dialog>
     <script src="js/app.js"></script>
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
